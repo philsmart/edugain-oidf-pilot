@@ -30,7 +30,7 @@ This document defines test cases for OpenID Federation in eduGAIN. This includes
 ### TA-01: Basic Topology
 
 ```
-        [ Trust Anchor (Root) ]
+      [ Trust Anchor (Root) A ]
                   |
         ---------------------
         |                   |
@@ -40,9 +40,9 @@ This document defines test cases for OpenID Federation in eduGAIN. This includes
 ### TA-02: Hierarchical Single-Root Topology
 
 ```
-          [ Trust Anchor (Root) ]
+          [ Trust Anchor (Root) A ]
                     |                   
-         [ Intermediate Authority ]     
+            [ Intermediate A ]     
                     |                     
             -----------------           
             |               |           
@@ -51,11 +51,11 @@ This document defines test cases for OpenID Federation in eduGAIN. This includes
 ### TA-03: Hierarchical Multi-Intermediate Topology (eduGAIN)
 
 ```
-                [ Trust Anchor (TA) ]
+                [ Trust Anchor (Root) A ]
                          |
         -----------------------------------------
         |                                       |
-[ Intermediate Authority 1 ]          [ Intermediate Authority 2 ]
+  [ Intermediate A ]                    [ Intermediate B ]
         |                                       |
    ---------------                         ---------------
    |             |                         |             |
@@ -65,15 +65,15 @@ This document defines test cases for OpenID Federation in eduGAIN. This includes
 ### TA-04: Hierarchical Multi-Root Topology
 
 ```
-          [ Trust Anchor 1 ]                     
+          [ Trust Anchor (Root) A ]                     
                   |            
         ------------------------- 
         |                       |  
-[ Intermediate A ]      [ Intermediate B ]      [ Trust Anchor 2 ]
-        |                       |                      |
-   -------------           ------------------     ---------------- 
-   |           |           |           |    |-----|             |
- [ OP ]      [ RP ]      [ OP ]      [ RP ]      [OP]          [RP]
+[ Intermediate A ]      [ Intermediate B ]      [ Trust Anchor (Root) B ]
+        |                       |                        |
+   -------------           ------------------       ---------------- 
+   |           |           |           |    |-------|             |
+ [ OP ]      [ RP ]      [ OP ]      [ RP ]        [OP]          [RP]
  
 ```
 
