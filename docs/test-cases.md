@@ -206,6 +206,17 @@ In each test case, the architecture reference (e.g., TA-01) indicates which is t
 | **CA-03**  | TA-01 | MAY              | Endpoint Authentication              | Authenticate clients for `/list` endpoint, prevent enumeration of entities to unauthorized clients       | Attempt to access `/list` without authentication         | Only authenticated clients can retrieve entity lists           |
 
 
+## Virtual Organisation Test Cases
+
+A short-lived, ephemeral, Virtual Organisation (VO) is an entity that represents a temporary collaboration or project group formed by members from different institutions or organisations. 
+
+| Ref    | Arch | Requirement Level | Test Type                                      | Requirement Summary                              | Test Action                                              | Expected Outcome                                               |
+|--------|------|--------------|-----------------------------------------------|-------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------------|
+| **VO-01**  | TA-01 | MAY              | VO Entity Enrolment            | Support enrolment of Virtual Organisations (VOs) as an Intermediate | Enrol a VO as an intermediate                            | VO is successfully enrolled and can act as an intermediate      |
+| **VO-02**  | TA-01 | MAY              | VO Entity Suspension            | Support suspension of Virtual Organisations (VOs) as an Intermediate | Suspend a VO intermediate                            | VO is successfully suspended and RPs suboridnate of that VO are no longer trusted by OPs in eduGAIN (TODO)      |
+
+TODO: Time limited Entity Statement about an VO Intermediat e.g. this intermediate and things under it must only exist for 30 days.
+TODO: Something that allows a resolover to not include an OP or SP that is not part of...
 ---
 
 
