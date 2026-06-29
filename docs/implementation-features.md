@@ -1,20 +1,28 @@
+This document provides a best-effort overview of the features offered by various software products that support OpenID Federation. While some of these features are defined directly by the specification, others extend beyond it to address practical considerations and requirements that often arise production federations.
+
+* `?` : not sure
+* ✔ : Supported
+* ✘: Not currently supported; however, this does not rule out the possibility of support being added in the future.
+
+
 | Feature Category | Specification Feature | Shibboleth | SimpleSAMLphp | OFFA | DjangoRP | Shibboleth | SimpleSAMLphp | Inmor | Lighthouse |
 |---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | | **(ROLE)**| **OP** | **OP** | **RP** | **RP** | **RP** | **RP** | **TA** | **TA** |
-| **Basic** | Publish Entity Configuration, self-signed | ✔ | ✔ | ✔|✔ | NA| ✔| ✔| ✔|
-| **Basic** | Issues Entity Statements |✘ |? |? |? |NA |? | ✔| ✔|
-| **Basic** | Publish JSON Web Key Sets (JWKS) |✔|? |? |? |NA |? | ✔| ✔|
-| **HTTP Federation APIs** | `/list` endpoint |✘ |✘ | ?| ?|NA |? | ✔|✔ |
-| **HTTP Federation APIs**| `/fetch` endpoint |✔ |✔ |✔ |✔ |NA |✔ |✔ | ✔|
-| **HTTP Federation APIs**| `/resolve` endpoint | ✔| ✔| ✔| ?| NA| ?| ✘| ✔|
-| **HTTP Federation APIs**| Support client_authentication |✔ | ?|? |? |NA | ? |? |? |
+| **Basic** | Publish Entity Configuration, self-signed | ✔ | ✔ | ✔|✔ | ?| ✔| ✔| ✔|
+| **Basic** | Issues Entity Statements |✘ |? |? |? |? |? | ✔| ✔|
+| **Basic** | Publish JSON Web Key Sets (JWKS) |✔|? |? |? |? |? | ✔| ✔|
+| **HTTP Federation APIs** | `/list` endpoint |✘ |✘ | ?| ?|? |? | ✔|✔ |
+| **HTTP Federation APIs**| `/fetch` endpoint |✔ |✔ |✔ |✔ |? |✔ |✔ | ✔|
+| **HTTP Federation APIs**| `/resolve` endpoint | ✔| ✔| ✔| ?| ?| ?| ?| ✔|
+| **HTTP Federation APIs**| Support client_authentication |✔ | ?|? |? |? | ? |? |? |
 | **Client Registration** | Explicit Registration | ✔ | ? | ? |? |? |? |? |? |
 | **Client Registration** | Dynamic Registration | ✔ | ✔ | ✔ |? |? |? |? |? |
 | **Metadata Resolution** | Can Resolve Metadata, Internally |✔| ✔|✔|✔ |✔ | ✔ |✔ |✔  |
 | **Metadata Resolution** | Can Resolve Metadata From External Resolver |✔| ?|✔|? |? | ? |? |? |
 | **Metadata Resolution** | Internal Resolver Supports Metadata Overrides |✔| ?|✔|? |? | ? |? |? |
 | **Metadata Resolution** | Internal Resolver Supports Metadata Policies |✔| ?|✔|? |? | ? |? |✔ |
-| **Metadata Resolution** | Embedded trust chain validation | ? | ? | ? |? |? |? |? |? |
+| **Metadata Resolution** | Embedded trust chain validation | ✔ | ? | ? |? |? |? |? |? |
+| **Metadata Resolution** | Trust Mark Verification | ✔ | ? | ? |? |? |? |? |? |
 | **Trust Marks** | Scope Checking From Trust Marks | ? | ? | ? |? |? |? |? |? |
 | **Trust Marks** | Attribute Release Policies From Trust Marks | ? | ? | ? |? |? |? |? |? |
 | **Key Managment** | Automatic Trust Anchor Key Rotation | ? | ? | ? |? |? |? |? |? |
