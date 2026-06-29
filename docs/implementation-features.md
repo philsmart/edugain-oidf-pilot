@@ -15,8 +15,8 @@
 | **Metadata Resolution** | Internal Resolver Supports Metadata Overrides |✔| ?|✔|? |? | ? |? |? |
 | **Metadata Resolution** | Internal Resolver Supports Metadata Policies |✔| ?|✔|? |? | ? |? |✔ |
 | **Metadata Resolution** | Embedded trust chain validation | ? | ? | ? |? |? |? |? |? |
-| **Trust Marks** | Scope Checking | ? | ? | ? |? |? |? |? |? |
-| **Trust Marks** | Attribute Release Policies | ? | ? | ? |? |? |? |? |? |
+| **Trust Marks** | Scope Checking From Trust Marks | ? | ? | ? |? |? |? |? |? |
+| **Trust Marks** | Attribute Release Policies From Trust Marks | ? | ? | ? |? |? |? |? |? |
 | **Key Managment** | Automatic Trust Anchor Key Rotation | ? | ? | ? |? |? |? |? |? |
 | **Key Managment** | JWKS Key Rotation | ? | ? | ? |? |? |? |? |? |
 | **Admin UI** | Admin UI User Managment |✘ | ✘|✘ |✘ |✘ | ✘ |✔ |✔  |
