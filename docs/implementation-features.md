@@ -4,6 +4,7 @@ This document provides a best-effort overview of the features offered by various
 * ✔ : Supported
 * ✘: Not currently supported; however, this does not rule out the possibility of support being added in the future.
 
+Information is taken from public documentation or from testing. This could be wrong. 
 
 | Feature Category | Specification Feature | Shibboleth | SimpleSAMLphp | OFFA | DjangoRP | Shibboleth | SimpleSAMLphp | Inmor | Lighthouse |
 |---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
